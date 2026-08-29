@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Contact Us | AK Solar Industries</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial,sans-serif;
+    background:#f5faf6;
+    color:#17324d;
+}
+
+/* ================= NAVBAR ================= */
+
+header{
+    background:white;
+    padding:18px 6%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    box-shadow:0 3px 15px #ddd;
+    position:sticky;
+    top:0;
+    z-index:100;
+}
+
+.logo{
+    color:#f39c12;
+    font-size:22px;
+    font-weight:bold;
+}
+
+.logo span{
+    color:#073653;
+}
+
+nav a{
+    text-decoration:none;
+    color:#17324d;
+    margin-left:15px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:#16803c;
+}
+
+/* ================= BANNER ================= */
+
+.banner{
+    padding:70px 20px;
+    text-align:center;
+    color:white;
+    background:linear-gradient(135deg,#073653,#16803c);
+}
+
+.banner h1{
+    font-size:45px;
+    margin-bottom:12px;
+}
+
+.banner p{
+    font-size:18px;
+}
+
+/* ================= FOUNDERS ================= */
+
+.founders{
+    padding:60px 7%;
+    background:white;
+    text-align:center;
+}
+
+.founders h2{
+    color:#073653;
+    font-size:32px;
+    margin-bottom:12px;
+}
+
+.founders-intro{
+    max-width:750px;
+    margin:0 auto 35px;
+    line-height:1.6;
+    color:#555;
+}
+
+.founder-box{
+    display:flex;
+    justify-content:center;
+    gap:35px;
+    flex-wrap:wrap;
+}
+
+.founder{
+    width:320px;
+    padding:30px 25px;
+    background:#f5faf6;
+    border-radius:18px;
+    box-shadow:0 5px 20px #ddd;
+    transition:.3s;
+}
+
+.founder:hover{
+    transform:translateY(-8px);
+    box-shadow:0 10px 30px #ccc;
+}
+
+.founder img{
+    width:160px;
+    height:160px;
+    object-fit:cover;
+    border-radius:50%;
+    border:5px solid #f39c12;
+    margin-bottom:18px;
+}
+
+.founder h3{
+    color:#16803c;
+    font-size:21px;
+    margin-bottom:7px;
+}
+
+.role{
+    color:#f39c12;
+    font-weight:bold;
+    margin-bottom:15px;
+    font-size:17px;
+}
+
+.founder p{
+    line-height:1.6;
+    font-size:15px;
+}
+
+/* ================= CONTACT ================= */
+
+.contact{
+    max-width:1100px;
+    margin:60px auto;
+    padding:20px;
+    display:flex;
+    gap:40px;
+}
+
+/* CONTACT INFO */
+
+.info{
+    flex:1;
+    background:#073653;
+    color:white;
+    padding:35px;
+    border-radius:15px;
+}
+
+.info h2{
+    color:#f39c12;
+    margin-bottom:25px;
+    font-size:28px;
+}
+
+.info p{
+    margin:20px 0;
+    line-height:1.6;
+}
+
+.info a{
+    color:white;
+    text-decoration:none;
+}
+
+.info a:hover{
+    color:#f39c12;
+}
+
+/* BUTTONS */
+
+.contact-buttons{
+    display:flex;
+    gap:10px;
+    flex-wrap:wrap;
+    margin-top:25px;
+}
+
+.call-btn,
+.whatsapp-btn{
+    padding:12px 18px;
+    border-radius:8px;
+    text-decoration:none;
+    font-weight:bold;
+    color:white;
+}
+
+.call-btn{
+    background:#f39c12;
+}
+
+.whatsapp-btn{
+    background:#16803c;
+}
+
+.call-btn:hover,
+.whatsapp-btn:hover{
+    opacity:.85;
+}
+
+/* ================= FORM ================= */
+
+.form{
+    flex:1;
+    background:white;
+    padding:35px;
+    border-radius:15px;
+    box-shadow:0 5px 20px #ddd;
+}
+
+.form h2{
+    color:#16803c;
+    margin-bottom:20px;
+}
+
+input,
+textarea,
+select{
+    width:100%;
+    padding:13px;
+    margin-bottom:15px;
+    border:1px solid #ccc;
+    border-radius:8px;
+    font-size:15px;
+}
+
+textarea{
+    height:120px;
+    resize:none;
+}
+
+button{
+    width:100%;
+    padding:14px;
+    border:none;
+    border-radius:8px;
+    background:#f39c12;
+    color:white;
+    font-size:16px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#16803c;
+}
+
+/* ================= LOCATION ================= */
+
+.location{
+    text-align:center;
+    padding:20px 8% 60px;
+}
+
+.location h2{
+    margin-bottom:20px;
+    color:#073653;
+    font-size:30px;
+}
+
+.map{
+    max-width:1000px;
+    height:300px;
+    margin:auto;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 5px 20px #ddd;
+}
+
+.map iframe{
+    width:100%;
+    height:100%;
+    border:0;
+}
+
+/* ================= CTA ================= */
+
+.cta{
+    padding:50px 20px;
+    text-align:center;
+    background:#16803c;
+    color:white;
+}
+
+.cta h2{
+    margin-bottom:10px;
+    font-size:30px;
+}
+
+.cta p{
+    font-size:17px;
+}
+
+.cta-btn{
+    display:inline-block;
+    margin-top:20px;
+    padding:13px 28px;
+    background:#f39c12;
+    color:white;
+    text-decoration:none;
+    border-radius:8px;
+    font-weight:bold;
+}
+
+.cta-btn:hover{
+    background:#ffb300;
+}
+
+/* ================= FOOTER ================= */
+
+footer{
+    background:#031f31;
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+footer h3{
+    color:#f39c12;
+    margin-bottom:12px;
+}
+
+footer p{
+    margin:8px 0;
+}
+
+.copyright{
+    margin-top:15px;
+    color:#aaa;
+}
+
+/* ================= MOBILE ================= */
+
+@media(max-width:800px){
+
+    header{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    nav{
+        text-align:center;
+    }
+
+    nav a{
+        display:inline-block;
+        margin:5px;
+    }
+
+    .banner h1{
+        font-size:36px;
+    }
+
+    .contact{
+        flex-direction:column;
+        margin:30px auto;
+    }
+
+    .founder{
+        width:100%;
+        max-width:350px;
+    }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+
+<!-- ================= NAVBAR ================= -->
+
+<header>
+
+    <div class="logo">
+        ☀️ AK SOLAR <span>INDUSTRIES</span>
+    </div>
+
+    <nav>
+
+        <a href="index.html">Home</a>
+
+        <a href="about.html">About Us</a>
+
+        <a href="contact.html">Contact</a>
+
+        <a href="loan.html">Loan & Schemes</a>
+
+        <a href="services.html">Services</a>
+
+    </nav>
+
+</header>
+
+<form action="https://formsubmit.co/aksolarindustries.solar@gmail.com"
+      method="POST">
+
+</form>
+
+
+<!-- ================= BANNER ================= -->
+
+<section class="banner">
+
+    <h1>📞 Contact Us</h1>
+
+    <p>
+        आम्ही तुमच्या Solar Journey मध्ये मदत करण्यास तयार आहोत!
+    </p>
+
+</section>
+
+
+<!-- ================= FOUNDERS ================= -->
+
+<section class="founders">
+
+    <h2>☀️ आमचे Founder & Co-Founder</h2>
+
+    <p class="founders-intro">
+
+        AK Solar Industries च्या माध्यमातून
+        स्वच्छ ऊर्जा, वीज बचत आणि विश्वासार्ह
+        Solar Solutions ग्राहकांपर्यंत पोहोचवण्यासाठी
+        आमची टीम कार्यरत आहे.
+
+    </p>
+
+
+    <div class="founder-box">
+
+
+        <!-- FOUNDER -->
+
+        <div class="founder">
+
+            <img src="Akshay Pic.jpeg"alt="Founder">
+
+            <h3>
+                Akshay Ganpat Kolhe
+            </h3>
+
+            <div class="role">
+                Founder
+            </div>
+
+            <p>
+                 <p>
+
+            📞 <b> <a href="tel:8261932450">
+                8261932450
+            </a></b><br>
+
+        </p>
+
+
+                Solar Energy क्षेत्रात ग्राहकांना
+                योग्य आणि विश्वासार्ह Solar Solutions
+                उपलब्ध करून देण्याच्या उद्देशाने
+                AK Solar Industries च्या विकासासाठी
+                कार्यरत.
+
+            </p>
+
+        </div>
+
+
+        <!-- CO-FOUNDER -->
+
+        <div class="founder">
+
+            <img src="Aaditya Pic.jpeg" alt="Co-Founder">
+
+            <h3>
+                Aaditya Nanasaheb Kshirsagar
+            </h3>
+
+            <div class="role">
+                Co-Founder
+            </div>
+
+            <p>
+                 <p>
+
+            📞 <b> <a href="tel:9356218260">
+                9356218260
+            </a></b><br>
+
+        </p>
+
+
+                Solar Installation, Maintenance,
+                Loan आणि Government Scheme संदर्भात
+                ग्राहकांना योग्य मार्गदर्शन देण्यासाठी
+                आणि उत्तम Solar सेवा देण्यासाठी कार्यरत.
+
+            </p>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+<!-- ================= CONTACT SECTION ================= -->
+
+<section class="contact">
+
+
+    <!-- CONTACT INFORMATION -->
+
+    <div class="info">
+
+        <h2>Get In Touch ☀️</h2>
+
+
+        <p>
+
+            📞 <b>Phone</b><br>
+
+            <a href="tel:8261933450">
+                8261933450
+            </a>
+
+            <br>
+
+            <a href="tel:9356218260">
+                9356218260
+            </a>
+        </p>
+
+
+        <p>
+
+            📧 <b>Email</b><br>
+
+            aksolarindustries2026@gmail.com
+
+        </p>
+
+
+        <p>
+
+            📍 <b>Address</b><br>
+
+            Vadner Bhairav,<br>
+
+            Tal. Chandwad,<br>
+
+            Dist. Nashik,<br>
+
+            Maharashtra - 423111
+
+        </p>
+
+
+        <p>
+
+            🕒 <b>Working Hours</b><br>
+
+            Monday - Saturday<br>
+
+            9:00 AM - 6:00 PM
+
+        </p>
+
+
+        <div class="contact-buttons">
+
+            <a
+                href="tel:9356218260"
+                class="call-btn">
+
+                📞 Call Now
+
+            </a>
+
+
+            <a
+                href="https://wa.me/919356218260"
+                class="whatsapp-btn"
+                target="_blank">
+
+                💬 WhatsApp
+
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <!-- CONTACT FORM -->
+
+    <div class="form">
+
+        <h2>📝 Send Us a Message</h2>
+
+
+        <form action="https://formsubmit.co/aksolarindustries2026@gmail.com"
+      method="POST">
+
+    <input type="text"
+           name="name"
+           placeholder="Your Name"
+           required>
+
+    <input type="tel"
+           name="phone"
+           placeholder="Mobile Number"
+           required>
+
+    <input type="email"
+           name="email"
+           placeholder="Email Address"
+           required>
+
+    <select name="service" required>
+
+        <option value="">Select Service</option>
+
+        <option value="Solar Installation">
+            Solar Installation
+        </option>
+
+        <option value="Residential Solar">
+            Residential Solar
+        </option>
+
+        <option value="Commercial Solar">
+            Commercial Solar
+        </option>
+
+        <option value="Solar Maintenance">
+            Solar Maintenance
+        </option>
+
+        <option value="Solar Loan">
+            Solar Loan
+        </option>
+
+        <option value="Subsidy Guidance">
+            Subsidy Guidance
+        </option>
+
+    </select>
+
+    <textarea name="message"
+              placeholder="Write your message..."
+              required></textarea>
+
+
+    <!-- EMAIL SETTINGS -->
+
+    <input type="hidden"
+           name="_subject"
+           value="New Customer Enquiry - AK Solar Industries">
+
+    <input type="hidden"
+           name="_captcha"
+           value="false">
+
+
+    <button type="submit">
+        🚀 Send Message
+    </button>
+
+</form>
+
+    </div>
+
+</section>
+
+
+<!-- ================= LOCATION ================= -->
+
+<section class="location">
+
+    <h2>📍 Our Location</h2>
+
+    <div class="map">
+
+        <iframe
+            src="https://www.google.com/maps?q=Vadner%20Bhairav,Chandwad,Nashik,Maharashtra&output=embed"
+            loading="lazy">
+        </iframe>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CTA ================= -->
+
+<section class="cta">
+
+    <h2>
+        ☀️ Start Your Solar Journey Today!
+    </h2>
+
+    <p>
+        तुमच्या घरासाठी किंवा व्यवसायासाठी
+        योग्य Solar Solution जाणून घ्या.
+    </p>
+
+    <a
+        href="tel:9356218260"
+        class="cta-btn">
+
+        📞 Talk With Us
+
+    </a>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <h3>
+        ☀️ AK SOLAR INDUSTRIES
+    </h3>
+
+    <p>
+        “सूर्याची ऊर्जा, आपल्या प्रगतीची किल्ली…”
+    </p>
+
+    <p>
+        📞 8261933450 | 9356218260
+    </p>
+
+      <p>
+        📧 aksolarindustries2026@gmail.com
+    </p>
+
+    <p>
+        📍 Vadner Bhairav, Tal. Chandwad,
+        Dist. Nashik, Maharashtra - 423111
+    </p>
+
+    <p class="copyright">
+
+        © 2026 AK Solar Industries.
+        All Rights Reserved.
+
+    </p>
+
+</footer>
+
+
+</body>
+</html>

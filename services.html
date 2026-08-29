@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Services | AK Solar Industries</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial,sans-serif;
+    background:#f5faf6;
+    color:#17324d;
+}
+
+/* NAVBAR */
+
+header{
+    background:white;
+    padding:18px 6%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    box-shadow:0 3px 15px #ddd;
+}
+
+.logo{
+    color:#f39c12;
+    font-size:22px;
+    font-weight:bold;
+}
+
+nav a{
+    text-decoration:none;
+    color:#17324d;
+    margin-left:15px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:#16803c;
+}
+
+/* BANNER */
+
+.banner{
+    padding:65px 20px;
+    text-align:center;
+    color:white;
+    background:linear-gradient(135deg,#073653,#16803c);
+}
+
+.banner h1{
+    font-size:45px;
+    margin-bottom:10px;
+}
+
+.banner p{
+    font-size:18px;
+}
+
+/* SERVICES */
+
+.services{
+    padding:60px 7%;
+    text-align:center;
+}
+
+.services h2{
+    color:#073653;
+    font-size:32px;
+    margin-bottom:35px;
+}
+
+.service-box{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    flex-wrap:wrap;
+}
+
+.card{
+    width:280px;
+    padding:30px 20px;
+    background:white;
+    border-radius:15px;
+    box-shadow:0 5px 20px #ddd;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 10px 30px #ccc;
+}
+
+.icon{
+    font-size:45px;
+    margin-bottom:15px;
+}
+
+.card h3{
+    color:#16803c;
+    margin-bottom:12px;
+}
+
+.card p{
+    line-height:1.6;
+    font-size:15px;
+}
+
+/* SOLAR GENERATION */
+
+.generation{
+    padding:60px 7%;
+    background:white;
+    text-align:center;
+}
+
+.generation h2{
+    color:#073653;
+    font-size:32px;
+    margin-bottom:12px;
+}
+
+.generation-intro{
+    max-width:750px;
+    margin:auto;
+    line-height:1.6;
+    margin-bottom:35px;
+}
+
+.generation-box{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    flex-wrap:wrap;
+}
+
+.generation-card{
+    width:250px;
+    padding:30px 20px;
+    background:#f5faf6;
+    border-radius:15px;
+    border-top:5px solid #f39c12;
+    box-shadow:0 5px 18px #ddd;
+    transition:.3s;
+}
+
+.generation-card:hover{
+    transform:translateY(-8px);
+}
+
+.generation-card .solar-icon{
+    font-size:40px;
+}
+
+.generation-card h3{
+    color:#16803c;
+    margin:12px 0;
+}
+
+.generation-card strong{
+    display:block;
+    color:#f39c12;
+    font-size:25px;
+    margin-top:8px;
+}
+
+.generation-note{
+    max-width:700px;
+    margin:35px auto 0;
+    padding:18px;
+    background:#fff5d9;
+    border-radius:10px;
+    font-size:18px;
+}
+
+/* PROCESS */
+
+.process{
+    background:#f5faf6;
+    padding:55px 7%;
+    text-align:center;
+}
+
+.process h2{
+    color:#073653;
+    margin-bottom:30px;
+}
+
+.steps{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.step{
+    width:200px;
+    padding:20px;
+    border-radius:12px;
+    background:white;
+    box-shadow:0 3px 12px #ddd;
+}
+
+.step span{
+    display:inline-flex;
+    width:45px;
+    height:45px;
+    align-items:center;
+    justify-content:center;
+    border-radius:50%;
+    background:#16803c;
+    color:white;
+    font-weight:bold;
+}
+
+.step h3{
+    margin:12px 0;
+    color:#16803c;
+}
+
+/* CTA */
+
+.cta{
+    padding:55px 20px;
+    text-align:center;
+    background:#16803c;
+    color:white;
+}
+
+.cta h2{
+    margin-bottom:12px;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:20px;
+    padding:13px 28px;
+    background:#f39c12;
+    color:white;
+    text-decoration:none;
+    border-radius:8px;
+    font-weight:bold;
+}
+
+.btn:hover{
+    background:#ffb300;
+}
+
+/* FOOTER */
+
+footer{
+    background:#031f31;
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+footer h3{
+    color:#f39c12;
+    margin-bottom:10px;
+}
+
+/* MOBILE */
+
+@media(max-width:800px){
+
+    header{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    nav{
+        text-align:center;
+    }
+
+    nav a{
+        display:inline-block;
+        margin:5px;
+    }
+
+    .banner h1{
+        font-size:36px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<header>
+
+    <div class="logo">
+        ☀️ AK SOLAR INDUSTRIES
+    </div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact</a>
+        <a href="loan.html">Loan & Schemes</a>
+        <a href="services.html">Services</a>
+    </nav>
+
+</header>
+
+
+<!-- BANNER -->
+
+<section class="banner">
+
+    <h1>🔧 Our Services</h1>
+
+    <p>
+        Complete Solar Solutions For Your Future
+    </p>
+
+</section>
+
+
+<!-- SERVICES -->
+
+<section class="services">
+
+    <h2>☀️ आमच्या Solar Services</h2>
+
+    <div class="service-box">
+
+        <div class="card">
+
+            <div class="icon">☀️</div>
+
+            <h3>Solar Installation</h3>
+
+            <p>
+                घर, दुकान आणि व्यवसायासाठी
+                Rooftop Solar System Installation.
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <div class="icon">🏠</div>
+
+            <h3>Residential Solar</h3>
+
+            <p>
+                घरासाठी योग्य Solar System
+                निवडण्यासाठी मार्गदर्शन.
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <div class="icon">🏢</div>
+
+            <h3>Commercial Solar</h3>
+
+            <p>
+                Shops, Offices आणि Businesses
+                साठी Solar Energy Solutions.
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <div class="icon">🔧</div>
+
+            <h3>Maintenance</h3>
+
+            <p>
+                Solar System ची नियमित
+                तपासणी आणि maintenance.
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <div class="icon">💰</div>
+
+            <h3>Subsidy Guidance</h3>
+
+            <p>
+                उपलब्ध सरकारी Solar Subsidy
+                योजनांबाबत मार्गदर्शन.
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <div class="icon">💳</div>
+
+            <h3>Loan Assistance</h3>
+
+            <p>
+                Solar Loan आणि EMI
+                संदर्भात मार्गदर्शन.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- SOLAR GENERATION -->
+
+<section class="generation">
+
+    <h2>☀️ Solar System वीज निर्मिती क्षमता</h2>
+
+    <p class="generation-intro">
+        Solar Rooftop System द्वारे घरगुती वापरासाठी
+        स्वच्छ आणि सौर ऊर्जेपासून वीज निर्मिती करता येते.
+        खालील वीज निर्मिती ही अंदाजे आहे.
+    </p>
+
+    <div class="generation-box">
+
+        <div class="generation-card">
+
+            <div class="solar-icon">☀️</div>
+
+            <h3>1 किलोवॅट</h3>
+
+            <p>दरमहा अंदाजे</p>
+
+            <strong>120 युनिट</strong>
+
+        </div>
+
+
+        <div class="generation-card">
+
+            <div class="solar-icon">☀️</div>
+
+            <h3>2 किलोवॅट</h3>
+
+            <p>दरमहा अंदाजे</p>
+
+            <strong>240 युनिट</strong>
+
+        </div>
+
+
+        <div class="generation-card">
+
+            <div class="solar-icon">☀️</div>
+
+            <h3>3 किलोवॅट</h3>
+
+            <p>दरमहा अंदाजे</p>
+
+            <strong>360 युनिट</strong>
+
+        </div>
+
+    </div>
+
+
+    <div class="generation-note">
+
+        ⚡ <b>30 वर्षांपर्यंत वीज निर्मितीची क्षमता</b>
+
+    </div>
+
+</section>
+
+
+<!-- PROCESS -->
+
+<section class="process">
+
+    <h2>⚡ आमची कार्यपद्धती</h2>
+
+    <div class="steps">
+
+        <div class="step">
+
+            <span>1</span>
+
+            <h3>Contact</h3>
+
+            <p>
+                आमच्याशी संपर्क करा.
+            </p>
+
+        </div>
+
+
+        <div class="step">
+
+            <span>2</span>
+
+            <h3>Site Visit</h3>
+
+            <p>
+                Solar requirement तपासणी.
+            </p>
+
+        </div>
+
+
+        <div class="step">
+
+            <span>3</span>
+
+            <h3>Quotation</h3>
+
+            <p>
+                योग्य Solar quotation.
+            </p>
+
+        </div>
+
+
+        <div class="step">
+
+            <span>4</span>
+
+            <h3>Installation</h3>
+
+            <p>
+                Solar System installation.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- CTA -->
+
+<section class="cta">
+
+    <h2>
+        तुमच्या Solar Project साठी तयार आहात? ☀️
+    </h2>
+
+    <p>
+        आजच AK Solar Industries शी संपर्क करा.
+    </p>
+
+    <a href="contact.html" class="btn">
+        📞 Contact Us
+    </a>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+    <h3>☀️ AK SOLAR INDUSTRIES</h3>
+
+    <p>
+        📞 9356218260 | 8261932450
+    </p>
+
+    <p>
+        📧  aksolarindustries2026@gmail.com
+    </p>
+
+    <p>
+        📍 Vander Bhairav, Tal. Chandwad,
+        Dist. Nashik, Maharashtra - 423111
+    </p>
+
+    <br>
+
+    <small>
+        © 2026 AK Solar Industries | All Rights Reserved
+    </small>
+
+</footer>
+
+</body>
+</html>

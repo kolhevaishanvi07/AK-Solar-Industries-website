@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>About Us | AK Solar Industries</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5faf6;
+            color: #17324d;
+        }
+
+        /* NAVBAR */
+
+        header {
+            background: white;
+            padding: 18px 6%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 3px 15px #ddd;
+        }
+
+        .logo {
+            color: #f39c12;
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #17324d;
+            margin-left: 18px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #f39c12;
+        }
+
+        /* PAGE TITLE */
+
+        .banner {
+            padding: 70px 20px;
+            text-align: center;
+            color: white;
+
+            background:
+                linear-gradient(
+                    rgba(0, 80, 45, 0.85),
+                    rgba(0, 80, 45, 0.85)
+                ),
+                url("https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9?auto=format&fit=crop&w=1600&q=80");
+
+            background-size: cover;
+            background-position: center;
+        }
+
+        .banner h1 {
+            font-size: 50px;
+            margin-bottom: 10px;
+        }
+
+        .banner p {
+            font-size: 18px;
+        }
+
+        /* ABOUT */
+
+        .about {
+            max-width: 1100px;
+            margin: 60px auto;
+            padding: 20px;
+            display: flex;
+            gap: 50px;
+            align-items: center;
+        }
+
+        .about-text {
+            flex: 1;
+        }
+
+        .about-text h2 {
+            font-size: 35px;
+            color: #16803c;
+            margin-bottom: 20px;
+        }
+
+        .about-text p {
+            font-size: 17px;
+            line-height: 1.8;
+            margin-bottom: 15px;
+        }
+
+        .about-image {
+            flex: 1;
+        }
+
+        .about-image img {
+            width: 100%;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px #ccc;
+        }
+
+        /* MISSION */
+
+        .mission {
+            padding: 60px 8%;
+            background: white;
+            text-align: center;
+        }
+
+        .mission h2 {
+            color: #17324d;
+            font-size: 32px;
+            margin-bottom: 30px;
+        }
+
+        .cards {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            width: 280px;
+            padding: 30px 20px;
+            background: #f5faf6;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px #ddd;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+        }
+
+        .icon {
+            font-size: 40px;
+        }
+
+        .card h3 {
+            color: #16803c;
+            margin: 15px 0;
+        }
+
+        .card p {
+            line-height: 1.6;
+        }
+
+        /* CTA */
+
+        .cta {
+            padding: 60px 20px;
+            text-align: center;
+            background: #073653;
+            color: white;
+        }
+
+        .cta h2 {
+            font-size: 32px;
+            margin-bottom: 15px;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 13px 25px;
+            background: #f39c12;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            background: #16803c;
+        }
+
+        /* FOOTER */
+
+        footer {
+            background: #031f31;
+            color: white;
+            text-align: center;
+            padding: 30px;
+        }
+
+        footer h3 {
+            color: #f39c12;
+            margin-bottom: 10px;
+        }
+
+        /* MOBILE */
+
+        @media(max-width: 800px) {
+
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav a {
+                margin: 5px;
+                display: inline-block;
+            }
+
+            .about {
+                flex-direction: column;
+                margin: 30px auto;
+            }
+
+            .banner h1 {
+                font-size: 40px;
+            }
+
+        }
+
+    </style>
+</head>
+
+<body>
+
+
+<!-- NAVBAR -->
+
+<header>
+
+    <div class="logo">
+        ☀️ AK SOLAR INDUSTRIES
+    </div>
+
+     <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+            <a href="loan.html">Loan & Schemes</a>
+            <a href="services.html">Services</a>
+        </nav>
+
+</header>
+
+
+<!-- PAGE BANNER -->
+
+<section class="banner">
+
+    <h1>About Us</h1>
+
+    <p>
+        सूर्याची ऊर्जा • आपल्या प्रगतीची किल्ली
+    </p>
+
+</section>
+
+
+<!-- ABOUT COMPANY -->
+
+<section class="about">
+
+    <div class="about-text">
+
+        <h2>
+            ☀️ AK Solar Industries
+        </h2>
+
+        <p>
+            <b>AK Solar Industries</b> मध्ये आपले स्वागत आहे.
+            आम्ही घरगुती, व्यावसायिक आणि इतर
+            वापरासाठी Solar Energy Solutions
+            उपलब्ध करून देतो.
+        </p>
+
+        <p>
+            आमचा उद्देश ग्राहकांना स्वच्छ,
+            विश्वासार्ह आणि किफायतशीर
+            Solar Energy Solutions उपलब्ध करून देणे आहे.
+        </p>
+
+        <p>
+            Solar Installation पासून Maintenance,
+            Solar Yojana, Subsidy आणि Loan
+            संदर्भातील मार्गदर्शनापर्यंत आम्ही
+            ग्राहकांना आवश्यक सेवा देण्याचा प्रयत्न करतो.
+        </p>
+
+    </div>
+
+
+    <div class="about-image">
+
+        <img
+            src="AK solar logo.jpeg"
+            alt="Solar Panels"
+        >
+
+    </div>
+
+</section>
+
+
+<!-- MISSION -->
+
+<section class="mission">
+
+    <h2>आमचे ध्येय</h2>
+
+    <div class="cards">
+
+
+        <div class="card">
+
+            <div class="icon">🌱</div>
+
+            <h3>Clean Energy</h3>
+
+            <p>
+                स्वच्छ आणि पर्यावरणपूरक
+                ऊर्जेला प्रोत्साहन देणे.
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <div class="icon">💰</div>
+
+            <h3>Energy Saving</h3>
+
+            <p>
+                ग्राहकांना वीज खर्चात
+                बचत करण्यास मदत करणे.
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <div class="icon">🤝</div>
+
+            <h3>Customer Support</h3>
+
+            <p>
+                ग्राहकांना installation आणि
+                after-sales support देणे.
+            </p>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+<!-- CTA -->
+
+<section class="cta">
+
+    <h2>
+        तुमच्या घरासाठी Solar बसवायचा आहे?
+    </h2>
+
+    <p>
+        आजच AK Solar Industries शी संपर्क करा.
+    </p>
+
+    <a href="contact.html" class="btn">
+        📞 Contact Us
+    </a>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+    <h3>☀️ AK SOLAR INDUSTRIES</h3>
+
+    <p>
+        📞 9356218260 | 8261932450
+    </p>
+
+    <p>
+        📧  aksolarindustries2026@gmail.com
+    </p>
+
+    <p>
+        📍 Vander Bhairav, Tal. Chandwad,
+        Dist. Nashik, Maharashtra - 423111
+    </p>
+
+    <br>
+
+    <small>
+        © 2026 AK Solar Industries | All Rights Reserved
+    </small>
+
+</footer>
+
+
+</body>
+</html>

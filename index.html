@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AK Solar Industries</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            color: #12344d;
+            background: #f8fff9;
+        }
+
+        /* NAVBAR */
+        header {
+            background: white;
+            padding: 18px 6%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 3px 15px #ddd;
+        }
+
+        .logo {
+            color: #f39c12;
+            font-size: 23px;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: #12344d;
+            text-decoration: none;
+            margin-left: 18px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #f39c12;
+        }
+
+        /* HERO */
+        .hero {
+            min-height: 600px;
+            padding: 100px 8%;
+            display: flex;
+            align-items: center;
+
+            background:
+                linear-gradient(90deg, white 20%, transparent),
+                url("https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=1600&q=80");
+
+            background-size: cover;
+            background-position: center;
+        }
+
+        .hero-content {
+            max-width: 650px;
+        }
+
+        .tag {
+            color: #16803c;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        h1 {
+            font-size: 55px;
+            color: #073653;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+
+        /* BUTTONS */
+        .btn {
+            display: inline-block;
+            margin-top: 15px;
+            margin-right: 10px;
+            padding: 13px 25px;
+            background: #f39c12;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            background: #16803c;
+            transform: translateY(-3px);
+        }
+
+        .btn2 {
+            background: white;
+            color: #16803c;
+            border: 2px solid #16803c;
+        }
+
+        /* ABOUT */
+        .about {
+            padding: 60px 8%;
+            text-align: center;
+            background: white;
+        }
+
+        .about h2,
+        .services h2 {
+            font-size: 32px;
+            margin-bottom: 20px;
+            color: #073653;
+        }
+
+        .about p {
+            font-size: 17px;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        /* SERVICES */
+        .services {
+            padding: 60px 8%;
+            text-align: center;
+            background: #f1f9f3;
+        }
+
+        .cards {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            width: 280px;
+            padding: 30px 20px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px #ddd;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 30px #ccc;
+        }
+
+        .icon {
+            font-size: 40px;
+        }
+
+        .card h3 {
+            margin: 15px 0;
+            color: #16803c;
+        }
+
+        /* CTA */
+        .cta {
+            padding: 60px 20px;
+            text-align: center;
+            background: #073653;
+            color: white;
+        }
+
+        .cta h2 {
+            font-size: 32px;
+            margin-bottom: 15px;
+        }
+
+        /* FOOTER */
+        footer {
+            background: #031f31;
+            color: white;
+            text-align: center;
+            padding: 30px;
+        }
+
+        footer h3 {
+            color: #f39c12;
+            margin-bottom: 10px;
+        }
+
+        /* MOBILE */
+        @media(max-width: 800px) {
+
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav {
+                text-align: center;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 5px;
+            }
+
+            .hero {
+                min-height: 550px;
+                background:
+                    linear-gradient(
+                        rgba(255,255,255,0.85),
+                        rgba(255,255,255,0.85)
+                    ),
+                    url("https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=1200&q=80");
+
+                background-size: cover;
+            }
+
+            h1 {
+                font-size: 40px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header>
+
+        <div class="logo">
+            ☀️ AK SOLAR INDUSTRIES
+        </div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+            <a href="loan.html">Loan & Schemes</a>
+            <a href="services.html">Services</a>
+        </nav>
+
+    </header>
+
+
+    <!-- HERO -->
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <div class="tag">
+                ☀️ CLEAN • SMART • SAVING
+            </div>
+
+            <h1>
+                Solar Energy<br>
+                For A Brighter Future
+            </h1>
+
+            <p>
+                घर, दुकान आणि व्यवसायासाठी आधुनिक
+                Solar Energy Solutions.
+            </p>
+
+            <p>
+                वीज बिलात बचत करा आणि
+                स्वच्छ ऊर्जेकडे एक पाऊल पुढे टाका.
+            </p>
+
+            <a href="#" class="btn">
+                📋 Get Free Quote
+            </a>
+
+            <a href="#" class="btn btn2">
+                ☀️ Solar Yojana
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- ABOUT -->
+    <section class="about">
+
+        <h2>
+            ☀️ AK Solar Industries मध्ये आपले स्वागत आहे
+        </h2>
+
+        <p>
+            आम्ही घरगुती, व्यावसायिक आणि इतर
+            वापरासाठी Solar Energy Solutions
+            उपलब्ध करून देतो.
+        </p>
+
+    </section>
+
+
+    <!-- SERVICES -->
+    <section class="services">
+
+        <h2>आमच्या सुविधा</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <div class="icon">☀️</div>
+                <h3>Solar Installation</h3>
+                <p>
+                    घर आणि व्यवसायासाठी
+                    Solar System Installation.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="icon">💰</div>
+                <h3>वीज बिलात बचत</h3>
+                <p>
+                    Solar Energy मुळे
+                    वीज खर्च कमी करण्यास मदत.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="icon">💳</div>
+                <h3>Loan सुविधा</h3>
+                <p>
+                    Solar Loan आणि EMI
+                    संदर्भात मार्गदर्शन.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CTA -->
+    <section class="cta">
+
+        <h2>
+            आजच Solar कडे वळा! ☀️
+        </h2>
+
+        <p>
+            तुमच्या घरासाठी योग्य Solar System
+            जाणून घेण्यासाठी आमच्याशी संपर्क करा.
+        </p>
+
+        <a href="contact.html" class="btn">
+        📞 Contact Us
+    </a>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <h3>☀️ AK SOLAR INDUSTRIES</h3>
+
+        <p>
+            📞 8261933450 | 9356218260
+        </p>
+
+        <p>
+            📧 aksolarindustries2026@gmail.com
+        </p>
+
+        <p>
+            📍 Vander Bhairav, Tal. Chandwad,
+            Dist. Nashik, Maharashtra - 423111
+        </p>
+
+        <br>
+
+        <small>
+            © 2026 AK Solar Industries | All Rights Reserved
+        </small>
+
+    </footer>
+
+</body>
+</html>
